@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Listas</h1>
+    </header>
+
+    <main>
+      <!-- Forma correcta de hacer un menu -->
+      <nav>
+        <ul>
+          <li><a href="#post-2">Post 1</a></li>
+          <li><a href="#post-1">Post 2</a></li>
+          <li><a href="#post-3">Post 3</a></li>
+          <li><a href="#post-4">Post 4</a></li>
+          <li><a href="#post-5">Post 5</a></li>
+          <li><a href="#post-6">Post 6</a></li>
+        </ul>
+      </nav>
+
+      <h2>Lista de compra</h2>
+      <ul>
+        <li>Pan</li>
+        <li>Huevo</li>
+        <li>Leche</li>
+      </ul>
+
+      <h2>Orden de aprendizaje en el desarrollo WEB</h2>
+
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ol>
+
+      <h2>Lenguajes para el desarrollo WEB</h2>
+
+      <dl>
+        <dt>HTML</dt>
+        <dd>
+          HyperText Markup language: es un lenguaje de marcado que se usa para
+          estructurar datos es una pagina WEB
+        </dd>
+
+        <dt>CSS</dt>
+        <dd>
+          CSS, en español «Hojas de estilo en cascada», es un lenguaje de diseño
+          gráfico para definir y crear la presentación de un documento
+          estructurado escrito en un lenguaje de marcado
+        </dd>
+
+        <dt>JavaScript</dt>
+        <dd>
+          JavaScript es un lenguaje de programación interpretado, dialecto del
+          estándar ECMAScript. Se define como orientado a objetos, basado en
+          prototipos, imperativo, débilmente tipado y dinámico.
+        </dd>
+      </dl>
+
+      <!-- Atributos de las listas:
+ol -> 
+Type: Estilos de numeración(1,A, a , I(Numero romano), i)
+Start: inicio de la secuencia (un numero, letra etc.)
+
+ul ->
+type: Estilos de los items(disc, square , circle) -->
+
+      <h2>Atributo de las listas</h2>
+
+      <ul type="square">
+        <li>Item</li>
+        <li>Item</li>
+      </ul>
+
+      <ul type="circle">
+        <li>Item</li>
+        <li>Item</li>
+      </ul>
+
+      <ol type="1">
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+
+      <!-- metodo start me permite elegir en que numero de la lista quiero que empiece  -->
+      <ol type="1" start="2">
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+
+      <ol type="A">
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+
+      <ol type="A" start="4">
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+
+      <ol type="a">
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+
+      <ol type="I" start="4">
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+
+      <ol type="i">
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
+
+<!-- Las listas en HTML sirven para listar contenido. En
+función del tipo de contenido de nuestra lista tenemos tres tipos de listas:
+
+ul -> unordered list: Se utiliza cuando el orden de los elementos no influye (No se cumple una secuencia ejemplo la Lista de la compra)
+
+ol -> ordered list: Se utiliza cuando el orden de los elementos es importante (Se debe cumplir una secuencia ejemplo desarrollo WEB)
+
+Cada elemnto de la lista se representa con la etiqueta <li>, tanto en las ul como en las ol
+
+dl -> definition list : Se utiliza para hacer una lista de definición (Diccionario)
+
+Cada elemnto de una lista de definición lleva 2 etiquetas:
+
+dt -> Definition term: El término que vamos a definir
+
+dd -> Definition description: la description del termino
+
+-->

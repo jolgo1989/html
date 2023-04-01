@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contenido embebido</title>
+
+    <!-- Estilo para que la imagen y video se ajuste -->
+    <style>
+      img,
+      video {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Contenido embebido</h1>
+    </header>
+    <main>
+      <!-- Siempre colocar nombre el atributo alt Para que salgo un contenido cuando la imagen por algun inconveniente no cargue (probar remplazando la extención .gif por .gi) -->
+
+      <div>
+        <h2>Contenido embebido(img)</h2>
+        <img
+          src="/contenido_embebido/assets/imagenes/Pikachu.gif"
+          alt="picachu bailando"
+        />
+      </div>
+
+      <div>
+        <h2>Contenido embebido(audio)</h2>
+        <!--Utilizar la eiqueta autoplay si queremos que el audio o video cargue automaticamente, tener encuenta que el navegador por defecto bloquea el audio, por lo tanto utilizar la etiqueta muted
+        loop -> permite que una vez finalice un video o audio se reproduzca automaticamente
+        -->
+        <audio
+          src="/contenido_embebido/assets/audio/oomiee.mp3"
+          controls
+          autoplay
+          muted
+        ></audio>
+      </div>
+
+      <!-- poster-> permite colocar una portada de inicio al video
+        Ejemplo de video que se reproduce automaticamente y se repite una vez finalice:
+        <video src="/contenido_embebido/assets/video/Creux De Van.mp4" controls autoplay muted loop></video>
+       -->
+      <div>
+        <h2>Contenido embebido(video)</h2>
+        <video
+          src="/contenido_embebido/assets/video/Creux De Van.mp4"
+          controls
+          loop
+          poster="/contenido_embebido/assets/imagenes/portada.jpg"
+        ></video>
+      </div>
+
+      <!-- No se recomienda sobrecargar una web con iframe porque se relentiza la pagina -->
+      <div>
+        <h2>Contenido embebido(iframe)</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/u2Ms34GE14U"
+          title="YouTube video player"
+        ></iframe>
+      </div>
+
+      <div>
+        <h2>Contenido embebido(figure)</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+          reiciendis quisquam pariatur est enim autem dolor recusandae,
+          voluptates esse vel blanditiis quae doloremque labore doloribus,
+          sapiente error quasi mollitia nemo!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+          reiciendis quisquam pariatur est enim autem dolor recusandae,
+          voluptates esse vel blanditiis quae doloremque labore doloribus,
+          sapiente error quasi mollitia nemo!
+        </p>
+        <!-- figure -> sirve para imagenes, tablas ,fragmentos de codigos,graficos, una cita cualquier cosa,que sea contendio relacionado pero que sea opcional su presencia, que se pueda quitar y el articulo no pierda sentido. -->
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/1741235/pexels-photo-1741235.jpeg?cs=srgb&dl=pexels-lina-kivaka-1741235.jpg&fm=jpg"
+            alt="Perro acostado"
+          />
+        </figure>
+        <figcaption>Perro raza beagle(Es como el pie de foto)</figcaption>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+          reiciendis quisquam pariatur est enim autem dolor recusandae,
+          voluptates esse vel blanditiis quae doloremque labore doloribus,
+          sapiente error quasi mollitia nemo!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+          reiciendis quisquam pariatur est enim autem dolor recusandae,
+          voluptates esse vel blanditiis quae doloremque labore doloribus,
+          sapiente error quasi mollitia nemo!
+        </p>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

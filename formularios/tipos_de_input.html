@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!-- button vs typebutton
+         el type button sirve para crear un boton y haga un tipo de operación a traves de javascript, pero no sirve para enviar un formulario -->
+
+      <form>
+        <input />
+        <input type="button" value="enviar input" />
+        <input type="submit" value="enviar input" />
+        <button>Enviar</button>
+      </form>
+
+      <!-- El datetime-local no se recomienda porque no funciona en algunos navegadores,se recomienda usar datetime-local y time para seleccionar fecha y hora. -->
+      <form>
+        <input type="date" />
+        <!-- Forma no recomendada -->
+        <input type="datetime-local" />
+        <!-- Forma recomendada -->
+        <input type="date" />
+        <input type="time" />
+        <!-- Mes -->
+        <input type="month" />
+        <!-- Semana -->
+        <input type="week" />
+      </form>
+
+      <!-- Observar el video en el 3:47:27 para ver la pagina desde el celular -->
+      <form>
+        <div>
+          <label> search <input type="search" /></label>
+        </div>
+
+        <div>
+          <label>
+            telefono
+            <input type="tel" />
+          </label>
+        </div>
+
+        <div>
+          <label>
+            email
+            <input type="email" />
+          </label>
+        </div>
+
+        <div>
+          <label>
+            password
+            <input type="password" />
+          </label>
+        </div>
+
+        <div>
+          <label>
+            url
+            <input type="url" />
+          </label>
+        </div>
+      </form>
+
+      <form>
+        <div>
+          <input type="color" />
+          <!-- recibe solo numero -->
+          <input type="number" />
+          <!-- cualquier duda observar el video en el 3:52:44 -->
+          <input type="range" step="5" min="0" max="20" />
+          <!-- Restablece todo sus valores por defecto -->
+          <input type="reset" />
+          <input type="text" />
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
+
+<!-- input type
+button -> Se comporta igual que un boton <button>
+submit -> Se utiliza para enviar un formulario
+
+
+*Input para fechas
+date -> Se utiliza para introducir una fecha
+datetime -> obsoleto
+datetime-loca -> fecha y hora, no funciona en firefox
+week -> Se utiliza para introducir el número de semana del año
+month -> Se utiliza para introducir un mes
+time -> Se utiliza para introducir una hora
+
+*Input para moviles 
+email -> Se utiliza para introducir un email
+search -> Se utiliza para la barras de búsqueda
+tel -> Se utiliza para introducir números telefónicos
+url -> Se utiliza para introducir URls
+password -> Se utiliza para contraseña
+
+*input extras
+color -> Se utiliza para especificar un color
+number -> Se utiliza para valores numéricos
+range -> Se utiliza para establecer un rango
+reset -> Se utiliza para resetear el fomulario
+text -> Valor por defecto
+hidden -> Campo oculto, puede contener valor pero no se motrara
+
+https://developer.mozilla.org/es/docs/Web/HTML/Element/input -->

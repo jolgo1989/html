@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estructura basica de un formulario</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <!-- La estructura de un formulario se compone de 4 elementos.
+
+        form -> Es la etiqueta que engloba nuestro formulario 
+
+        label -> sirve para escribir nombre del campo a llenar.debe tener el atributo for al cual se le indica un id que emparejara el label con su input correspondiente.
+        input -> sirve para crear un campo que permitirá al usuario interactura. el unico atributo obligatorio del input es name
+        button -> crea un boton que permitira enviar el formulario
+
+        Nota: se utiliza "name" en label e input para en el momento de dar clic tanto en el nombre como en el campo se pueda interactuar, cualquier duda ver video 3:33:36 -->
+
+      <!-- Forma mas comun de asociar un label a un input -->
+      <form>
+        <label for="name">Nombre</label>
+        <input id="name" />
+        <button>Enviar formulario</button>
+      </form>
+
+      <!-- Forma no tan comun de asociar un label a un input -->
+      <form>
+        <label>
+          Nombre
+          <input />
+        </label>
+        <button>Enviar formulario</button>
+      </form>
+      
+      <!-- Ir a tipos_de_input.hmtl para profundizar en el tema (input)
+      Observar el video en el 4:33:16(get vs post), se explica la importancia 
+      y la obligatoriedad de utilizar el name en los formularios -->
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

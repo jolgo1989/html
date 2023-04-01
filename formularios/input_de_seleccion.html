@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Elementos seleccionables</h1>
+    </header>
+    <main>
+      <form>
+        <h2>Genero</h2>
+        <!-- radio -> Permite seleccionar una única opcion de una lista de opciones relacionadas,se utiliza
+        (name="gender") para indicarle al navegador a que categoria pertenecen y que solo puede ser selecionada una unica opción.
+
+        Nota: si queremos que un radio aparezca selecionado de forma autonoma o natural utilizamos la siguiente secuencia(  <input type="radio" name="gender" checked /> ).
+        la etiqueta value sirve para decirle al formulario cuando lo enviemos que valor es el que contiene el elemento(Es obligatorio su uso)
+    -->
+        <label>
+          <input type="radio" name="gender" value="masculino" />
+          Masculino
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="femenino" />
+          Femenino
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="no especifica" />
+          No especifica
+        </label>
+      </form>
+
+      <!-- checkbox -> Permite seleccionar varias opciones de una lista de opciones relacionadas -->
+      <form>
+        <h2>Lenguajes de programación</h2>
+        <label>
+          <input type="checkbox" name="lenguages" value="html" />
+          HTML
+          <input type="checkbox" name="lenguages" value="kotlin" />
+          CSS
+          <input type="checkbox" name="lenguages" value="css" />
+          KOTLIN
+          <input type="checkbox" name="lenguages" value="javascript" />
+          JavaScript
+        </label>
+      </form>
+
+      <!-- select -> Crea una lista de opciones donde podemos seleccionar una o varias opciones,cada opción ira dentro de una etiqueta <option> </option> -->
+      <form>
+        <h2>Elementos de selección</h2>
+
+        <select name="lenguajes">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="kotlin">KOTLIN</option>
+          <option value="JavaScript">JavaScript</option>
+        </select>
+      </form>
+
+      <!-- La etiqueta multiple indica multiples opciones que pueden ser seleccionadas en una lista
+        Nota: Si queremos seleccionar mas de una se debe presionar control -->
+      <form>
+        <h2>Elementos de selección con multiple</h2>
+
+        <select name="lenguajes" multiple>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="kotlin">KOTLIN</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="kotlin">KOTLIN</option>
+          <option value="JavaScript">JavaScript</option>
+        </select>
+      </form>
+
+      <!-- Si tenemos muchas opciones podemos ordenarlas por categorias a traves de las etiqueta <optgroup> con el atributo label para nombrar la categoria -->
+
+      <form>
+        <h2>Elementos de selección avanzados</h2>
+        <select name="mascotas">
+          <optgroup label="4 patas">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="conejo">Conejo</option>
+            <option value="burro">Burro</option>
+          </optgroup>
+          <optgroup label="aves">
+            <option value="loro">Loro</option>
+            <option value="canario">Canario</option>
+          </optgroup>
+          <optgroup label="otras">
+            <option value="serpiente">Serpiente</option>
+            <option value="tarantula">Tarántula</option>
+          </optgroup>
+        </select>
+      </form>
+
+      <!-- se puede hacer un filtro escribiendo en la barra -->
+      <form>
+        <h2>Elementos de seleccionable(Data list)</h2>
+        <input type="list" list="pets" />
+        <datalist id="pets">
+          <option value="perro">Descripción opcional</option>
+          <option value="gato">Descripción opcional</option>
+          <option value="conejo">Descripción opcional</option>
+          <option value="burro">Descripción opcional</option>
+        </datalist>
+      </form>
+
+
+
+    </main>
+    <footer></footer>
+  </body>
+</html>

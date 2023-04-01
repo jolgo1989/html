@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <!-- Recuerda que el id se utiliza para asociar el input con el label -->
+    <main>
+      <!-- fieldset -> Se utiliza para agrupar elementos dentro de un formulario
+        legend -> Representa una etiqueta para el contendio fieldset -->
+      <form>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" />
+          <label for="surname">Apellido</label>
+          <input type="text" id="surname" />
+        </fieldset>
+        <!-- file -> Este input se utiliza para acrgar archivos y enviarlos desde un formulario -->
+        <input type="file" />
+        <!-- meter -> Representa un valor dentro de un rango conocido (Es posible no utilizarla mucho)
+        para aclarar dudad con low,high y optimun ver el video en 4:18:26 -->
+        <label for="fuel">Combustible</label>
+        <meter
+          id="fuel"
+          min="0"
+          max="100"
+          value="50"
+          low="30"
+          high="75"
+          optimum="50"
+        ></meter>
+
+        <label for="task">Tarea 1</label>
+        <!-- progress -> representa el progreso de una tarea (Es posible no utilizarla mucho)-->
+        <progress id="task" max="100" value="75"></progress>
+
+        <label for="message">Mensaje</label>
+        <!-- textarea -> Se utiliza para introducir texto en un formulario
+        Nota:Si modificamos los valores de cols y row el area de texto amplia su columna o fila -->
+        <textarea name="" id="message" cols="30" rows="10"></textarea>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header><h1>Contenido embebido</h1></header>
+    <!-- el 3x significa que si carga un DRP de 3pixeles la imagen se reducirma,
+    para comprobarlo aumentar el tamaño de la pagina a 300 y actualizar , la imagen debe reducirse.
+
+    Se utiliza src para tener una copia de seguridad o alternativa en el caso de que un navegador no cargue la imagen lo haga a traves de este metodo(este problema se evidencia en internet explorer)
+    Nota: se coloca portada.webp y jpg para en el caso que un navegador no cargue un archivo elija el otro.
+
+    ejemplo #1:
+    <img
+        srcset="
+          /contenido_embebido/assets/imagenes/portada.webp,
+          /contenido_embebido/assets/imagenes/portada.jpg,
+          /contenido_embebido/assets/imagenes/portada-mobile.webp 2x,
+          /contenido_embebido/assets/imagenes/portada-mobile.jpg  2x
+        "
+        src="/contenido-embebido/assets/images/portada.jpg"
+        alt="Imagen de portada"
+-->
+    <main>
+      <!-- ejemplo #2(Utilizar este metodo):
+            Recordar: se utiliza esta secuencia por si un navegador no soporta webp cargue el jpg
+        /contenido_embebido/assets/imagenes/portada-mobile.webp,
+          /contenido_embebido/assets/imagenes/portada-mobile.jpg," -->
+      <picture>
+        <source
+          srcset="
+            /contenido_embebido/assets/imagenes/portada-mobile.webp,
+            /contenido_embebido/assets/imagenes/portada-mobile.jpg
+          "media="(max-width:1200px)"
+        />
+
+        <img
+          src="/contenido_embebido/assets/imagenes/portada.jpg"
+          alt="imagen de portada"
+        />
+      </picture>
+    </main>
+    <footer></footer>
+  </body>
+</html>
+
+<!-- DPR(Device pixel radio)
+es la relación que existe en tre los pixeles reales que tiene el dispositivo y los pixeles que tenemos disponibles
+DPR= Pixeles reales /pixeles disponibles cualquier duda observar el video 5:03:48 -->
